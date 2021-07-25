@@ -29,7 +29,7 @@ function HeroSection() {
           buttonStyle='btn--primary'
           buttonSize='btn--large'
         >
-         FUSE PROTOCOL
+         FUSE
         </Button>
 
         <p>Built on the best technologies</p>
@@ -38,7 +38,21 @@ function HeroSection() {
         <img src="./images/alpha.png" alt="alpha-finance-logo" height="35" />
         <img src="./images/sushiswap-2.png" alt="sushi-finance logo" height="35" />
         <img src="./images/yearn-2.png" alt="yearn-finance logo" height="35" />
-        <img src="./images/synthetix-2.png" alt="Synthetix logo" height="35" />
+        <img src="./images/synthetix-2-p-500.png" alt="Synthetix logo" height="35" />
+
+
+
+        <div className='quant-logo'>
+
+        <p >Audited by QuantStamp</p>
+
+        <img src="./images/quantstamp.svg" alt="Aave logo" height="55" />
+
+        </div>
+
+
+
+   
 
 
         {/* <Button

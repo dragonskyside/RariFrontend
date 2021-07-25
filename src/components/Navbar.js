@@ -34,7 +34,7 @@ function Navbar() {
            
             {/* <i class='fab fa-typo3' /> */}
             <img src="./images/rari.png" alt="Rari" height="50" />
-            <span>RARI CAPITAL</span> 
+            RARI CAPITAL
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -54,6 +54,7 @@ function Navbar() {
                 Pools
               </Link>
             </li>
+
             <li className='nav-item'>
               <Link
                 to='/fuse'
@@ -75,7 +76,7 @@ function Navbar() {
             </li>
  
                 </ul>
-                {button && <Button buttonStyle='btn--outline'>CONNECT</Button>}
+                {/* {button && <Button buttonStyle='btn--outline'>CONNECT</Button>} */}
 
             </div>
         </nav>
