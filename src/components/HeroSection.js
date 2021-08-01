@@ -10,6 +10,7 @@ function HeroSection() {
       <video src='/videos/video-3.mp4' autoPlay />
 
       <h3>  Rari Capital is a yield aggregator and open interest rate DeFi protocol.</h3>
+      {/* <h3>I made this specially for Naomi, but she doesnt want to be the Vice Presdent</h3> */}
       <p>   Our platform allows you deposit assets into our pool and earn
               yield. 
               You may borrow or lend assets or even create markets of your own.

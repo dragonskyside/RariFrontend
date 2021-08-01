@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import './Button.css';
 import { Link } from 'react-router-dom';
 
@@ -14,6 +14,25 @@ export const Button = ({
 }) => {
     const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];
     const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
+
+    if (STYLES[1]) {
+        return (
+            <Link to='/Fuse' className='btn-mobile'>
+                <button
+                className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+                onClick={onClick}
+                type={type}
+                >
+                    {children}
+                </button>
+                </Link>
+    
+                
+        );
+        
+    } else {
+        
+    }
 
     return (
         <Link to='/Home' className='btn-mobile'>
@@ -31,3 +50,4 @@ export const Button = ({
 
     };
 
+export default Button

@@ -74,9 +74,9 @@ function Navbar() {
                 Start
               </Link>
             </li>
- 
-                </ul>
-                {/* {button && <Button buttonStyle='btn--outline'>CONNECT</Button>} */}
+
+            </ul>
+
 
             </div>
         </nav>
