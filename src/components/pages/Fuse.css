@@ -1,0 +1,38 @@
+
+.fuse-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.fuse-header {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(17, 85, 163);
+    color: #fff;
+    margin: 50px auto 10px ;
+
+}
+
+.fuse-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(7, 31, 59);
+    color: #fff;
+    margin: 10px auto 2px ;
+
+}
+
+.col {
+    flex: 1;
+} 
+
+
+ 

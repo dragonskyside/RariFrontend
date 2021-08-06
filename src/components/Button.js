@@ -15,7 +15,7 @@ export const Button = ({
     const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];
     const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
-    if (STYLES[1]) {
+    if (STYLES[1] && children === 'FUSE') {
         return (
             <Link to='/Fuse' className='btn-mobile'>
                 <button
@@ -30,12 +30,27 @@ export const Button = ({
                 
         );
         
-    } else {
-        
-    }
+    } 
 
-    return (
-        <Link to='/Home' className='btn-mobile'>
+    else if (STYLES[1] && children === 'ASSET POOLS') {
+        return (
+            <Link to='/Pools' className='btn-mobile'>
+                <button
+                className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+                onClick={onClick}
+                type={type}
+                >
+                    {children}
+                </button>
+                </Link>
+    
+                
+        );
+    };
+    
+    
+      return (
+        <Link to='/' className='btn-mobile'>
             <button
             className={`btn ${checkButtonStyle} ${checkButtonSize}`}
             onClick={onClick}

@@ -1,0 +1,13 @@
+.lend-borrow-card {
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: purple;
+    color: #fff;
+    margin: 2px auto 10px ;
+
+}
