@@ -1,8 +1,9 @@
 .lend-borrow-card {
 
-    display: flex;
+    /* display: flex; */
+    position: absolute;
     flex-wrap: wrap;
-    width: 70%;
+    width: 800px;
     height: 200px;
     padding: 15px;
     border-radius: 10px;

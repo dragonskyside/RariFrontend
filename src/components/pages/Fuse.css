@@ -2,6 +2,10 @@
 .fuse-container {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+    /* background-color: rgb(91, 105, 167); */
+    background-color: rgb(43, 50, 80);
+
 }
 
 
