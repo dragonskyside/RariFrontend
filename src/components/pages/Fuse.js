@@ -1,10 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Fuse.css';
 import LendBorrow from '../LendBorrow';
 import Button from '../Button';
 
 function Fuse() {
+
+    const [showElement, setShowElement] = useState(false);
+    
+    // const toggle = () => setShowElement(!showElement);
+   
+   
+
+
     return (
+        
         <div className="fuse-container">
 
             <div className="fuse-header">
@@ -23,16 +32,21 @@ function Fuse() {
                 <div className="col">$47,094,315.69</div>
                 <div className="col">$4,808,015</div>
                 <div className="col">B</div>
+
                 <Button
-                  className='btn--fuse'
+                
                   buttonStyle='btn--outline'
                   buttonSize='btn--medium'
+                  toggle = {() => setShowElement(!showElement)}
                  >
-         OPEN
-        </Button>
+                 OPEN
+                </Button>
+
             </div>
 
-            <LendBorrow />
+            
+
+            {showElement && <LendBorrow />}
 
         </div>
     )

@@ -4,8 +4,7 @@ import './App.css';
 import Home from './components/pages/Home';
 import Pools from './components/pages/Pools';
 import Fuse from './components/pages/Fuse';
-import { BrowserRouter as Router, Switch, Route } 
-from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
 

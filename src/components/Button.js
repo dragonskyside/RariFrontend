@@ -7,10 +7,13 @@ const SIZES = ['btn--medium', 'btn--large'];
 
 export const Button = ({
     children,
-    type,
+    // type,
     onClick,
     buttonStyle,
-    buttonSize
+    buttonSize,
+    toggle
+   
+    
 }) => {
     const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];
     const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
@@ -21,7 +24,7 @@ export const Button = ({
                 <button
                 className={`btn ${checkButtonStyle} ${checkButtonSize}`}
                 onClick={onClick}
-                type={type}
+                // type={type}
                 >
                     {children}
                 </button>
@@ -38,7 +41,7 @@ export const Button = ({
                 <button
                 className={`btn ${checkButtonStyle} ${checkButtonSize}`}
                 onClick={onClick}
-                type={type}
+                // type={type}
                 >
                     {children}
                 </button>
@@ -47,6 +50,21 @@ export const Button = ({
                 
         );
     };
+
+
+     if (STYLES[1] && children === 'OPEN') {
+        return (
+            // <Link to='#' className='btn-mobile'>
+                <button
+                className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+                onClick={toggle}
+                >
+                    {children}
+                </button>
+                // </Link>
+        )};
+
+
     
     
       return (
@@ -54,7 +72,7 @@ export const Button = ({
             <button
             className={`btn ${checkButtonStyle} ${checkButtonSize}`}
             onClick={onClick}
-            type={type}
+            // type={type}
             >
                 {children}
             </button>
