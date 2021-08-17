@@ -6,8 +6,8 @@ function LendBorrow() {
         
 
             <div className="lend-borrow-card">
-             <div className="col">LEND</div>
-             <div className="col">BORROW</div>
+             <div className="col1">LEND</div>
+             <div className="col2">BORROW</div>
             </div>
             
         
