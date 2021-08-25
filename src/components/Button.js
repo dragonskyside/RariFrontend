@@ -64,6 +64,18 @@ export const Button = ({
                 // </Link>
         )};
 
+        if (STYLES[1] && children === 'CONNECT') {
+            return (
+                // <Link to='#' className='btn-mobile'>
+                    <button
+                    className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+                    onClick={toggle}
+                    >
+                        {children}
+                    </button>
+                    // </Link>
+            )};
+
 
     
     

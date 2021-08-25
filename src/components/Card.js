@@ -1,36 +1,45 @@
-import React from 'react'
-import "./Card.css"
-import Button from './Button'
+import React, { useState } from "react";
+import "./Card.css";
+import Button from "./Button";
+import AddTasks from "./AddTasks";
 
-function Card({imageSource, poolName})  {
-    return (
-        
-        <div className="card-container">
-            <img className="logo" src={imageSource} alt="logo" height="50" width="50"></img>
+function Card({ imageSource, poolName }) {
+  const [showElement, setShowElement] = useState(false);
 
-            <p className="description">{poolName}</p>
+  return (
+    <div className="card-container">
+      <img
+        className="logo"
+        src={imageSource}
+        alt="logo"
+        height="50"
+        width="50"
+      ></img>
 
-            {/* <div className="cardData"> */}
+      <p className="description">{poolName}</p>
 
-            <p>Current Projected Yield (APY) </p>
-            
-            <p>Current Deposits </p>
-            <p>Your Deposits </p>
+      {/* <div className="cardData"> */}
 
-             <Button buttonStyle='btn--outline'>CONNECT</Button>
+      <p>Current Projected Yield (APY) </p>
 
-            
-            
-         
-        
-        </div>
-        
-       
-    )
+      <p>Current Deposits </p>
+      <p>Your Deposits </p>
+
+      <Button
+        buttonStyle="btn--outline"
+        buttonSize="medium"
+        toggle={() => setShowElement(!showElement)}
+      >
+        CONNECT
+      </Button>
+
+      {showElement && <AddTasks />}
+    </div>
+  );
 }
 
 Card.defaultProps = {
-    poolName: 'USDC Pool'
-}
+  poolName: "USDC Pool",
+};
 
-export default Card
+export default Card;

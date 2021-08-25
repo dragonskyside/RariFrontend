@@ -1,38 +1,15 @@
+.testform {
+  /* position: relative; */
+  width: 350px;
+  height: 400px;
 
-.add-form {
-  padding: 15px;
-    margin-bottom: 40px;
-    border: 2px solid #fff;
-  }
-  
-  .form-control {
-    margin: 20px 0;
-  }
-  
-  .form-control label {
-    display: block;
-  }
-  
-  .form-control input {
-    width: 100%;
-    height: 40px;
-    margin: 5px;
-    padding: 3px 7px;
-    font-size: 17px;
-  }
-  
-  .form-control-check {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .form-control-check label {
-    flex: 1;
-  }
-  
-  .form-control-check input {
-    flex: 2;
-    height: 20px;
-  }
-  
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  /* width: 32px;
+  height: 32px; */
+  padding: 0;
+  z-index: 10;
+  background-color: blue;
+}

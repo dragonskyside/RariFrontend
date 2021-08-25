@@ -1,18 +1,17 @@
 
 
 .footer {
-  /* position: fixed; */
+    /* position: fixed; */
     display: flex;
+    flex-direction: column;
     flex-flow: row wrap;
     padding: 30px 30px 20px 30px;
     color: #fff;
     background-color: black;
-   
-    border-top: 1px solid red;
   }
   
   .footer > * {
-    flex:  1 100%;
+    /* flex:  1 100%; */
   }
   
   .footer__addr {

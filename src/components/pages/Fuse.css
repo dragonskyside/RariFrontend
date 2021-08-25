@@ -8,6 +8,43 @@
 
 }
 
+.fuse-description {
+    display: flex;
+    flex-direction: row;
+    align-self: baseline;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    width: 70%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(17, 85, 163);
+    color: #fff;
+    margin: 50px auto 10px ;
+    font-size: larger;
+
+} 
+
+.searchBar {
+    background-color: #fff;
+
+}
+
+.fuseName {
+    font-size: 48px;
+    margin: 0;
+}
+
+.lt-panel {
+    padding: 0 10px;
+    margin-left: 20px;
+}
+.rt-panel {
+    align-self: center;
+    justify-content: flex-end;
+    margin-right: 10px;
+    padding: 10px;
+}
+
 
 
 .fuse-header {
@@ -18,7 +55,8 @@
     border-radius: 10px;
     background-color: rgb(17, 85, 163);
     color: #fff;
-    margin: 50px auto 10px ;
+    margin: 30px auto 10px ;
+    font-size: larger;
 
 }
 
@@ -26,11 +64,14 @@
     display: flex;
     flex-wrap: wrap;
     width: 70%;
-    padding: 15px;
+    padding: 25px;
     border-radius: 10px;
     background-color: rgb(7, 31, 59);
     color: #fff;
     margin: 10px auto 2px ;
+    font-size: larger;
+
+
 
 }
 

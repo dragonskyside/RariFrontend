@@ -4,7 +4,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     width: 60%;
-    height: 200px;
+    height: 300px;
     padding: 5px;
     border-radius: 10px;
     /* background-color: purple; */
@@ -27,7 +27,7 @@
 .col2 {
     display: flex;
     justify-content: center;
-    background-color: rgba(16, 47, 223, 0.65);
+    background-color: #fff;
     width: 50%;
     color: #000;
 
